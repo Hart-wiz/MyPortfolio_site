@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio</title>
+
+    <style>
+      .homepagebg {
+        background-color: azure;
+        padding-top: 3rem;
+      }
+
+      .nav {
+        display: flex;
+        gap: 20rem;
+      }
+
+      .nav p {
+        margin-left: 3rem;
+        padding-right: 4rem;
+        text-decoration-line: underline;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+      }
+
+      ul a {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: bold;
+        text-decoration: none;
+      }
+
+      ul a:hover {
+        color: rgb(240, 14, 14);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration-line: underline;
+        text-decoration-thickness: 0.5rem;
+      }
+
+      ul a:active {
+        color: rgb(9, 163, 55);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration-line: underline;
+      }
+
+      .homepagebg p {
+        padding-left: 15rem;
+      }
+
+      .bodypg {
+        display: flex;
+        gap: 6rem;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+      }
+
+      .h {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        padding-left: 12rem;
+        padding-right: 5rem;
+        font-size: large;
+      }
+
+      .h #and {
+        margin-top: 0.2rem;
+        padding-left: 8rem;
+      }
+
+      .h #two {
+        margin-top: 0.2rem;
+      }
+
+      .h p {
+        font-family: "Times New Roman", Times, serif;
+        padding-left: 4rem;
+      }
+
+      button {
+        background-color: rgb(14, 160, 228);
+        margin-left: 3.7rem;
+        margin-right: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 1.5rem;
+        border: none;
+        box-shadow: 6px 6px 4px black;
+        color: azure;
+      }
+
+      button:hover {
+        background-color: rgb(194, 115, 19);
+        box-shadow: 3px 3px 4px rgb(56, 53, 53);
+        font-style: oblique;
+      }
+
+      img {
+        width: 25rem;
+        height: 25rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="homepagebg">
+      <div class="nav">
+        <p>PORTFOLIO</p>
+        <ul>
+          <li><a href="#">BIO</a></li>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">MY PROJECTS</a></li>
+        </ul>
+      </div>
+
+      <div class="bodypg">
+        <div class="h">
+          <h1 id="one">WEB DEVELOPER</h1>
+          <h1 id="and">&</h1>
+          <h1 id="two">Technical Writing</h1>
+          <p>NJIMOGU WISDOM</p>
+          <button>CONTACT ME</button>
+        </div>
+
+        <img src="img\development.webp" alt="picture of a developer" />
+      </div>
+    </div>
+  </body>
+</html>
