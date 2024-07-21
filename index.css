@@ -4,12 +4,17 @@
   padding: 0;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto;
+}
+
 /* .............................home html styling ..............................*/
 /* header style */
 header {
   background-color: rgb(36, 32, 32);
   display: grid;
-  width: 100vw;
+  width: auto;
   height: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -67,11 +72,15 @@ main {
 .homepage {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 0.4rem;
+  background-color: red;
 }
 
 .homepage img {
   width: 30rem;
   padding-left: 3rem;
+  grid-row: span 2;
 }
 .homepage p {
   color: rgb(0, 0, 0);
