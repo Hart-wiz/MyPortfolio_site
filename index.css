@@ -1,7 +1,13 @@
+/* general style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* .............................home html styling ..............................*/
 /* header style */
 header {
-  background-color: rgb(189, 3, 3);
+  background-color: rgb(36, 32, 32);
   display: grid;
   width: 100vw;
   height: auto;
@@ -9,12 +15,14 @@ header {
   grid-template-rows: auto;
 }
 header .textportfolio {
+  color: aliceblue;
   align-content: flex-end;
   padding-left: 5rem;
   font-size: 20px;
 }
 
 header .textwebdev {
+  color: aliceblue;
   grid-column: span 2;
   font-size: 60px;
   padding-left: 2rem;
@@ -31,26 +39,29 @@ ul li {
   list-style: none;
 }
 ul li a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   flex-direction: column;
   font-size: larger;
   padding-top: 3rem;
 }
 
-ul li :hover {
+ul li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
-  color: red;
+  color: rgb(180, 110, 5);
   cursor: pointer;
+  transition: 120ms;
 }
-ul li :active {
+ul li a:active {
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
   color: green;
 }
 
 /* styling main content */
 main {
-  background-color: rgb(3, 201, 250);
+  background-color: whitesmoke;
 }
 
 .homepage {
@@ -67,4 +78,89 @@ main {
   font-size: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 0.9rem;
+}
+
+/* styling buttons */
+.connect {
+  background-color: purple;
+  color: white;
+  font-size: large;
+  padding: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: black -7px 4px 7px;
+  margin-top: 3rem;
+}
+.connect:hover {
+  background-color: rgb(139, 85, 2);
+  font-style: italic;
+  cursor: pointer;
+  border-color: white;
+  transition: 120ms;
+  box-shadow: black -5px 3px 8px;
+}
+.resume {
+  background-color: rgb(80, 80, 79);
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+  margin-left: 3rem;
+  box-shadow: black -7px 4px 7px;
+  margin-top: 3rem;
+}
+.resume:hover {
+  background-color: rgb(51, 34, 0);
+  color: rgb(128, 118, 118);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: black -5px 3px 8px;
+}
+
+/* styling section myprojects */
+.myprojects {
+  background-color: rgb(252, 252, 252);
+  display: grid;
+  height: 700px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 4rem;
+}
+
+/* styling section testimonials */
+.testimonial {
+  display: grid;
+  height: 200px;
+  padding: 0.6rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+
+.testimonial div {
+  background-color: purple;
+  color: white;
+  border-radius: 0.5rem;
+}
+.testimonial h3 {
+  padding: 0.5rem;
+}
+.testimonial p {
+  padding: 0.5rem;
+}
+/* styling footer */
+#contacts {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
+}
+#contacts a {
+  text-decoration: none;
+  color: rgb(0, 0, 104);
+}
+footer p {
+  text-align: center;
+  padding-bottom: 2rem;
 }
