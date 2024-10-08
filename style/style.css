@@ -96,6 +96,7 @@ main {
   font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+  min-width: 50ch;
 }
 .homepage .p {
   padding-right: 9rem;
@@ -205,38 +206,6 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 900px) {
-  .skills {
-    flex-direction: column;
-    text-align: center;
-  }
-  .skills h1 {
-    font-size: 0.5rem;
-  }
-
-  .aboutme {
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-size: 0.3rem;
-
-    /* align-self: center; */
-    border-radius: 30px;
-    margin-left: 0;
-  }
-  .aboutme div {
-    width: 100%;
-    padding-top: 4em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.3rem;
-    font-style: italic;
-    text-align: center;
-  }
-  .aboutme img {
-    width: 300px;
-  }
-}
 .skills h1 {
   color: white;
   font-style: normal;
@@ -259,14 +228,13 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 3em 0;
-  justify-content: center;
+  margin: 5em 0;
   width: 60%;
   /* align-self: center; */
   border-radius: 30px;
   margin-left: 5em;
 }
-.aboutme div {
+.aboutme article {
   width: 70%;
   padding-top: 4em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -390,5 +358,43 @@ footer p {
     margin-left: 3rem;
     box-shadow: black -3px 4px 7px;
     margin-top: 0.5rem;
+  }
+  .skills {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills h1 {
+    font-size: 0.5rem;
+  }
+  .aboutme {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0;
+    width: 100%;
+    border-radius: 30px;
+    margin-left: 0;
+  }
+  .myprofile {
+    background-color: aqua;
+    width: 100%;
+  }
+  .aboutme {
+    background-color: antiquewhite;
+    display: flex;
+    border-radius: 30px;
+    margin: 0em;
+    justify-content: center;
+    padding: 3em 0;
+    text-align: center;
+  }
+  .aboutme article {
+    width: 70%;
+    padding-top: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    min-width: 30ch;
   }
 }
